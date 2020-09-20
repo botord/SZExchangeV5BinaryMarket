@@ -1,9 +1,10 @@
 package exchange.sz.v5.binary.model.message;
 
-import com.kafang.exchange.model.field.*;
 import exchange.sz.v5.binary.model.field.*;
 import io.netty.buffer.ByteBuf;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import java.nio.charset.StandardCharsets;
 
@@ -12,6 +13,8 @@ import java.nio.charset.StandardCharsets;
  * @date 2019/12/4 16:14
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true)
 public class SZV5MarketSnapshot extends Message{
     /**
      * 数据生成时间
